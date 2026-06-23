@@ -1,0 +1,154 @@
+:root {
+    --bg: #f5f5f5;
+    --text: #222;
+    --card: white;
+    --accent: #0078ff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: #111;
+        --text: #eee;
+        --card: #1c1c1c;
+        --accent: #4da3ff;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: var(--card);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.header .logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.header nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.header nav a:hover {
+    color: var(--accent);
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero-buttons a {
+    margin: 10px;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-primary {
+    background: var(--accent);
+    color: white;
+}
+
+.btn-secondary {
+    background: var(--text);
+    color: var(--bg);
+}
+
+.section {
+    padding: 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-grid span {
+    background: var(--card);
+    padding: 8px 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card {
+    display: flex;
+    background: var(--card);
+    margin: 20px 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.project-card img {
+    width: 180px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.project-card div {
+    padding: 20px;
+}
+
+.project-card a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+.timeline {
+    border-left: 3px solid var(--accent);
+    padding-left: 20px;
+}
+
+.timeline-item {
+    margin: 20px 0;
+}
+
+.timeline-item span {
+    font-weight: bold;
+    color: var(--accent);
+}
+
+section img {
+    width: 100%;
+    max-width: 700px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    opacity: 0.7;
+    margin-top: 40px;
+}
